@@ -5,6 +5,11 @@ import Components from './components/components';
 import AppComponent from './app.component';
 import 'normalize.css';
 
+require('bootstrap-loader');
+
+var $ = require('jquery');
+window.jQuery = $;
+
 angular.module('app', [
     uiRouter,
     Common,
